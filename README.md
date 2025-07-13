@@ -5,14 +5,6 @@ A fully responsive **User Management System** built with the MERN Stack (MongoDB
 
 ---
 
-## 📸 Preview
-
-###  Mern-Stack
-![Desktop Screenshot](./screenshots/mern-stack.png)
-
-
-
----
 
 ## 🧰 Tech Stack
 
