@@ -1,0 +1,15 @@
+# Mern-Stack/.gitignore
+
+# Server-side dependencies
+server/node_modules/
+
+# Environment variables
+client/.env
+server/.env
+
+# Logs and system files
+npm-debug.log*
+.DS_Store
+
+# Optional: Ignore build folders if you're creating static exports
+client/build/

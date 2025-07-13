@@ -1,0 +1,76 @@
+.addUser {
+  background-color: #f0f0f0; /* fixed typo: bground-color */
+  width: 90%;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.65);
+  box-sizing: border-box;
+}
+.addUser .btn-secondary {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.addUser h3 {
+  margin-top: 20px;
+  text-align: center;
+  color: blueviolet;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  font-size: 1.4rem;
+}
+
+.addUserForm .inputGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.addUserForm .inputGroup label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.addUserForm .inputGroup input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.addUserForm .inputGroup button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: darkcyan;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.addUserForm .inputGroup button:hover {
+  background-color: #007b7b;
+}
+
+@media (max-width: 600px) {
+  .addUser {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .addUser h3 {
+    font-size: 1.2rem;
+  }
+
+  .addUserForm .inputGroup input,
+  .addUserForm .inputGroup button {
+    font-size: 0.95rem;
+  }
+}
