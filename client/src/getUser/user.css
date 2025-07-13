@@ -1,0 +1,113 @@
+.userTable {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  box-sizing: border-box;
+}
+
+.userTable .btn {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.userTable table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.userTable thead th {
+  background-color: darkcyan;
+  color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.userTable tbody td {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.95rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+
+.noData {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.1rem;
+}
+
+
+.actionButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 6px;
+}
+
+.actionButtons .btn {
+  min-width: 80px;
+  font-size: 0.85rem;
+  padding: 8px 10px;
+  white-space: nowrap;
+  flex: 1 1 100px;
+  margin-top: 20px;
+}
+
+/* 📱 Responsive Table Styling */
+@media (max-width: 600px) {
+  .userTable table thead {
+    display: none;
+  }
+
+  .userTable table,
+  .userTable table tbody,
+  .userTable table tr,
+  .userTable table td {
+    display: block;
+    width: 100%;
+  }
+
+  .userTable table tr {
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+
+  .userTable table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+    border: none;
+  }
+
+  .userTable table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .actionButtons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actionButtons .btn {
+    width: 100%;
+  }
+}
